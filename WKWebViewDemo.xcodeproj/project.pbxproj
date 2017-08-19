@@ -13,6 +13,9 @@
 		A225D7AD1F46E36E00FABF68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A225D7AB1F46E36E00FABF68 /* Main.storyboard */; };
 		A225D7AF1F46E36E00FABF68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A225D7AE1F46E36E00FABF68 /* Assets.xcassets */; };
 		A225D7B21F46E36E00FABF68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A225D7B01F46E36E00FABF68 /* LaunchScreen.storyboard */; };
+		A225D7BA1F46E8D600FABF68 /* WKWebViewText.html in Resources */ = {isa = PBXBuildFile; fileRef = A225D7B91F46E8D600FABF68 /* WKWebViewText.html */; };
+		A2712A501F47E1CD00742167 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2712A4F1F47E1CD00742167 /* NextViewController.m */; };
+		A2712A531F480DA000742167 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2712A521F480DA000742167 /* JSViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		A225D7AE1F46E36E00FABF68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A225D7B11F46E36E00FABF68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A225D7B31F46E36E00FABF68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A225D7B91F46E8D600FABF68 /* WKWebViewText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewText.html; sourceTree = "<group>"; };
+		A2712A4E1F47E1CD00742167 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		A2712A4F1F47E1CD00742167 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		A2712A511F480DA000742167 /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		A2712A521F480DA000742167 /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 				A225D7A61F46E36E00FABF68 /* AppDelegate.m */,
 				A225D7A81F46E36E00FABF68 /* ViewController.h */,
 				A225D7A91F46E36E00FABF68 /* ViewController.m */,
+				A2712A4E1F47E1CD00742167 /* NextViewController.h */,
+				A2712A4F1F47E1CD00742167 /* NextViewController.m */,
+				A2712A511F480DA000742167 /* JSViewController.h */,
+				A2712A521F480DA000742167 /* JSViewController.m */,
 				A225D7AB1F46E36E00FABF68 /* Main.storyboard */,
 				A225D7AE1F46E36E00FABF68 /* Assets.xcassets */,
 				A225D7B01F46E36E00FABF68 /* LaunchScreen.storyboard */,
@@ -74,6 +86,7 @@
 		A225D7A21F46E36E00FABF68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A225D7B91F46E8D600FABF68 /* WKWebViewText.html */,
 				A225D7A31F46E36E00FABF68 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -110,6 +123,7 @@
 				TargetAttributes = {
 					A225D79E1F46E36E00FABF68 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WKQV5DN8XZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A225D7B21F46E36E00FABF68 /* LaunchScreen.storyboard in Resources */,
+				A225D7BA1F46E8D600FABF68 /* WKWebViewText.html in Resources */,
 				A225D7AF1F46E36E00FABF68 /* Assets.xcassets in Resources */,
 				A225D7AD1F46E36E00FABF68 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A225D7AA1F46E36E00FABF68 /* ViewController.m in Sources */,
+				A2712A531F480DA000742167 /* JSViewController.m in Sources */,
+				A2712A501F47E1CD00742167 /* NextViewController.m in Sources */,
 				A225D7A71F46E36E00FABF68 /* AppDelegate.m in Sources */,
 				A225D7A41F46E36E00FABF68 /* main.m in Sources */,
 			);
@@ -272,7 +289,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WKQV5DN8XZ;
 				INFOPLIST_FILE = WKWebViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosquito.WKWebViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +302,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WKQV5DN8XZ;
 				INFOPLIST_FILE = WKWebViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosquito.WKWebViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,6 +330,7 @@
 				A225D7B81F46E36E00FABF68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
